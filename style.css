@@ -94,3 +94,17 @@ a:active {
 .mode-toggle:hover {
 	background-color: #888;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.custom-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits text color */
+    font-size: 1.5em; /* Matches h2 size */
+    font-weight: bold; /* Makes it bold */
+}
