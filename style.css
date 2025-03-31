@@ -1,110 +1,62 @@
 :root {
-	--background-color: #263238;
-	--text-color: #ddd;
-	--link-color: #90A4AE;
-	--hover-link-color: purple;
-	--active-link-color: red;
+    --background-color: #263238;
+    --text-color: #ddd;
+    --link-color: #90A4AE;
+    --hover-link-color: purple;
+    --active-link-color: red;
 }
 
 body.light-mode {
-	--background-color: #ddd;
-	--text-color: #333;
-	--link-color: #90A4AE;
-	--hover-link-color: purple;
-	--active-link-color: red;
+    --background-color: #ddd;
+    --text-color: #333;
 }
-
-/* body {
-	background: linear-gradient(to right, #618E91 0%, 4.042179137468338%, #8ABCB9 8.084358274936676%, 11.775043606758118%,
-			#87C0C7 15.46572893857956%, 17.486818879842758%, #7AABBA 19.507908821105957%, 22.847099602222443%, #51809A 26.186290383338928%, 29.173988103866577%,
-			#6592A7 32.161685824394226%, 40.07029831409454%, #5D8AA9 47.97891080379486%, 52.284710109233856%, #709FBB 56.59050941467285%, 58.87522101402283%,
-			#90ADBD 61.1599326133728%, 62.56590783596039%, #95A7B1 63.971883058547974%, 64.67486917972565%, #839AA8 65.37785530090332%, 66.34446382522583%,
-			#869AA5 67.31107234954834%, 70.03515064716339%, #5C6F7D 72.75922894477844%, 77.15290188789368%, #365569 81.54657483100891%, 90.77328741550446%,
-			#2C3A45 100%);
-} */
 
 body {
-	background: var(--background-color);
-	color: var(--text-color);
-	transition: background-color 0.5s, color 0.5s;
-}
-
-img:hover {
-	transform: scale(1.05);
-	box-shadow: 5px 5px 5px 5px #888;
-}
-
-img {
-	max-width: 125px;
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .header-title {
-	font-size: 4vw;
-	font-family: Consolas;
-	font-variant: small-caps;
-	text-align: center;
-}
-
-.centered-text {
-	text-align: center;
-	font-family: Consolas;
-}
-
-table {
-	width: 100%;
-	font-family: Consolas;
-}
-
-th {
-	height: 150px;
-	text-align: center;
-	vertical-align: middle;
-}
-
-td {
-	height: 150px;
-	text-align: center;
-	vertical-align: middle;
-}
-
-a:link,
-a:visited {
-	color: var(--link-color);
-}
-
-a:hover {
-	color: var(--hover-link-color);
-}
-
-a:active {
-	color: var(--active-link-color);
-}
-
-.mode-toggle {
-	display: block;
-	padding: 10px;
-	margin: 20px auto;
-	background-color: #ccc;
-	border: none;
-	cursor: pointer;
-	font-size: 1rem;
-	border-radius: 5px;
-}
-
-.mode-toggle:hover {
-	background-color: #888;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 4vw;
+    font-family: Consolas;
     text-align: center;
 }
 
-.custom-link {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Inherits text color */
-    font-size: 1.5em; /* Matches h2 size */
-    font-weight: bold; /* Makes it bold */
+.centered-text, header {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    font-family: Consolas;
+    text-align: center;
+}
+
+th {
+    height: 150px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-link-color);
+}
+
+.mode-toggle {
+    display: block;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.mode-toggle:hover {
+    background-color: #888;
 }
