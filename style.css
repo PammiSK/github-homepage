@@ -84,15 +84,15 @@ a:active {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 
 .custom-link {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.5em;
-    font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+	font-size: 1.5em;
+	font-weight: bold;
 }
